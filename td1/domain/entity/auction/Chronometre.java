@@ -3,9 +3,8 @@ package td1.domain.entity.auction;
 import java.sql.Time;
 
 public class Chronometre {
-  private Time time;
+  private Time time = new Time(120000);
   public Chronometre () {
-    time = new Time(Time.parse("29/04/2024"));
     System.out.println(time);
   }
 
